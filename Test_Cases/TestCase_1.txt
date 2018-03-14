@@ -1,0 +1,10 @@
+%%
+integer test$Number$;
+get(test$Number$);
+if(Number$ < 0)
+put(" The number is negative ");
+endif;
+while(true){
+if(real == 123.456)
+return false;
+}

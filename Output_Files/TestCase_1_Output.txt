@@ -1,0 +1,44 @@
+     token			lexeme
+--------------------------------------------------------------
+        %%			separator
+   integer			identifier
+test$Number$			unknown
+         ;			separator
+       get			keyword
+         (			separator
+test$Number$			unknown
+         )			separator
+         ;			separator
+        if			keyword
+         (			separator
+   Number$			identifier
+         <			operator
+         0			integer
+         )			separator
+       put			keyword
+         (			separator
+         "			unknown
+       The			identifier
+    number			identifier
+        is			identifier
+  negative			identifier
+         "			unknown
+         )			separator
+         ;			separator
+     endif			keyword
+         ;			separator
+     while			keyword
+         (			separator
+      true			keyword
+         )			separator
+         {			separator
+        if			keyword
+         (			separator
+      real			keyword
+        ==			operator
+   123.456			real
+         )			separator
+    return			keyword
+     false			keyword
+         ;			separator
+         }			separator

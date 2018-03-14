@@ -1,0 +1,156 @@
+     token			lexeme
+--------------------------------------------------------------
+         @			unknown
+find$Grade			unknown
+         (			separator
+   points$			identifier
+         :			separator
+   integer			identifier
+         ;			separator
+total$$Marks		unknown
+         :			separator
+   integer			identifier
+         )			separator
+         {			separator
+  floating			identifier
+percentage$			identifier
+         ;			separator
+percentage$			identifier
+         :			separator
+         =			operator
+         (			separator
+   points$			identifier
+         /			operator
+total$$Marks		unknown
+         )			separator
+         *			operator
+       100			integer
+         ;			separator
+        if			keyword
+         (			separator
+percentage$			identifier
+        >=			operator
+ 9000.0000			real
+         )			separator
+     write			identifier
+         (			separator
+         "			unknown
+     Grade			identifier
+         A			identifier
+         "			unknown
+         )			separator
+         ;			separator
+      else			keyword
+        if			keyword
+         (			separator
+percentage$			identifier
+        >=			operator
+       1.1			real
+         )			separator
+     write			identifier
+         (			separator
+         "			unknown
+     Grade			identifier
+         B			identifier
+         "			unknown
+         )			separator
+         ;			separator
+      else			keyword
+        if			keyword
+         (			separator
+percentage$			identifier
+        >=			operator
+    700000			integer
+         )			separator
+     write			identifier
+         (			separator
+         "			unknown
+     Grade			identifier
+         C			identifier
+         "			unknown
+         )			separator
+         ;			separator
+      else			keyword
+        if			keyword
+         (			separator
+percentage$			identifier
+        >=			operator
+     60.00			real
+         )			separator
+     write			identifier
+         (			separator
+         "			unknown
+     Grade			identifier
+         D			identifier
+         "			unknown
+         )			separator
+         ;			separator
+      else			keyword
+     write			identifier
+         (			separator
+         "			unknown
+ Probation			identifier
+         "			unknown
+         )			separator
+         ;			separator
+    return			keyword
+         A			identifier
+         :			separator
+         :			separator
+         B			identifier
+         :			separator
+         :			separator
+         C			identifier
+         ;			separator
+         }			separator
+        %%			separator
+   integer			identifier
+student$Points			unknown
+         ,			separator
+     total			identifier
+         ;			separator
+     write			identifier
+         (			separator
+         "			unknown
+     Enter			identifier
+       the			identifier
+     score			identifier
+        of			identifier
+       the			identifier
+   student			identifier
+         "			unknown
+         )			separator
+         ;			separator
+      read			identifier
+         (			separator
+student$Points		unknown
+         )			separator
+         ;			separator
+     write			identifier
+         (			separator
+         "			unknown
+     Enter			identifier
+       the			identifier
+     total			identifier
+     marks			identifier
+   alloted			identifier
+        to			identifier
+       the			identifier
+    course			identifier
+         "			unknown
+         )			separator
+         ;			separator
+       put			keyword
+         (			separator
+     total			identifier
+         )			separator
+         ;			separator
+find$Grade			unknown
+         (			separator
+         [			separator
+student$Points		unknown
+         ,			separator
+     total			identifier
+         ]			separator
+         )			separator
+         ;			separator

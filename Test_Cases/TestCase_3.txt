@@ -1,0 +1,25 @@
+@ find$Grade(points$: integer; total$$Marks: integer)
+{
+floating percentage$;
+percentage$ :=(points$ / total$$Marks) * 100;
+if(percentage$ >= 9000.0000 )
+write(" Grade A ");
+else if(percentage$ >= 1.1)
+write(" Grade B ");
+else if(percentage$ >= 700000)
+write(" Grade C ");
+else if(percentage$ >= 60.00)
+write(" Grade D ");
+else
+! We are testing for comment 
+!
+write(" Probation ");
+return A::B::C;
+}
+%%
+integer student$Points, total;
+write(" Enter the score of the student ");
+read(student$Points);
+write(" Enter the total marks alloted to the course ");
+put(total);
+find$Grade([student$Points, total]);
